@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SPA Master</title>
+    <!-- スタイルシート -->
+    <link rel="stylesheet" href="./css/spa.css">
+    <link rel="stylesheet" href="./css/spa.shell.css">
+    <!-- サードパーティ　javaScript -->
+    <script src="./js/jq/jquery-3.2.1.min.js"></script>
+    <script src="./js/jq/urianchor-master/jquery.uriAnchor.js"></script>
+    <!-- 本書のjavaScript -->
+    <script src="./js/spa.js"></script>
+    <script src="./js/spa.shell.js"></script>
+    <script>
+        $(function () {
+            spa.initModule($("#spa"));
+        });
+    </script>
+</head>
+
+<body>
+    <div id="spa"></div>
+</body>
+
+</html>
