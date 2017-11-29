@@ -67,7 +67,10 @@ spa.shell = (function () {
         //チャットスライダー拡大開始
         if (do_extend) {
             jqueryMap.$chat.animate(
-                { height: configMap.chat_extend_height },
+                {
+                    height: configMap.chat_extend_height,
+                    opacity: 0.8
+                },
                 configMap.chat_extend_time,
                 function () {
                     jqueryMap.$chat.attr(
@@ -84,7 +87,10 @@ spa.shell = (function () {
 
         //チャットスライダー格納開始
         jqueryMap.$chat.animate(
-            { height: configMap.chat_retract_height },
+            {
+                height: configMap.chat_retract_height,
+                opacity: 1
+            },
             configMap.chat_extend_time,
             function () {
                 jqueryMap.$chat.attr(
